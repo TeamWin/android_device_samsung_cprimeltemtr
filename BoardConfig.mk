@@ -20,13 +20,13 @@ TARGET_BOOTLOADER_BOARD_NAME := cprimeltemtr
 # Kernel
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x02000000 --tags_offset 0x81e00000 --dt device/samsung/cprimeltemtr/dt.img
-TARGET_PREBUILT_KERNEL := device/samsung/cprimeltemtr/kernel
-#TARGET_KERNEL_SOURCE := kernel/samsung/cprimeltemtr
-#TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
-#TARGET_KERNEL_TIMA_CONFIG := tima_defconfig
-#TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
-#TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_rossa_tmo_defconfig
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
+#TARGET_PREBUILT_KERNEL := device/samsung/cprimeltemtr/kernel
+TARGET_KERNEL_SOURCE := kernel/samsung/cprimeltemtr
+TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
+TARGET_KERNEL_TIMA_CONFIG := tima_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_rossa_tmo_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 
