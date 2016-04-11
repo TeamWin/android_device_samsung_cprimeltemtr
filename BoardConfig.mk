@@ -19,7 +19,7 @@ TARGET_BOOTLOADER_BOARD_NAME := cprimeltemtr
 
 # Kernel
 BOARD_KERNEL_CMDLINE := BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci vmalloc=450M
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x02000000 --tags_offset 0x81e00000 --dt device/samsung/cprimeltemtr/dt.img
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x82000000 --tags_offset 0x81e00000 --dt device/samsung/cprimeltemtr/dt.img
 #TARGET_PREBUILT_KERNEL := device/samsung/cprimeltemtr/kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/cprimeltemtr
 TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
